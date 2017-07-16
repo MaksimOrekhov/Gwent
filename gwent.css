@@ -1,0 +1,351 @@
+body {
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background: url("/Users/maksimo/Documents/Gwent/decks_background.jpg") no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.cards {
+	background: url("/Users/maksimo/Documents/Gwent/cards_background.jpg") no-repeat;
+	background-position: top;
+    background-attachment: fixed;
+}
+
+.head {
+	background: url("/Users/maksimo/Documents/Gwent/gwent_header.png") no-repeat;
+	background-position: center;
+	height: 300px;
+}
+
+.main-menu {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li {
+	display: inline-block;
+	margin-right: 1px;
+}
+
+.main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #ffffff;
+    background-color: #1f1c45;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 30px;
+    width: 170px;
+    text-align: center;
+}
+
+.main-menu a:hover {
+	transition-duration: 0.3s;
+    background-color: rgb(70, 147, 126);
+}
+
+.main-menu a.active {
+	background-color: rgb(70, 147, 126);
+}
+
+.main {
+	display: block;
+	width: 1000px;
+	background-color: rgba(255, 255, 255, 0.85);
+	min-height: 100px;
+	margin: auto;
+	border: 2px solid rgb(70, 147, 126);
+}
+
+.main p {
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: justify;
+}
+
+.main h2 {
+	padding-left: 20px;
+}
+
+.main p:first-child {
+	padding-top: 20px;
+}
+
+iframe {
+	display: block;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+.main h1 {
+	text-align: center;
+}
+
+.topbutton {
+	display: block;
+    width:70px;
+    border:2px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    color:#333;
+    font-family:verdana;
+    font-size:12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-decks img {
+	transform: scale(1);
+	transition-duration: 0.3s;
+	margin-top: 30px;
+}
+
+.main-decks img:hover {
+	transform: scale(1.08);
+	transition-duration: 0.2s;
+	box-shadow: 5px 5px 10px 0 #000000;
+}
+
+.main-decks {
+	display: block;
+	max-width: 1000px;
+	background-color: rgba(255, 255, 255, 0.85);
+	min-height: 100%;
+	margin: auto;
+	border: 2px solid rgb(70, 147, 126);
+}
+
+.main-cards {
+	display: block;
+	max-width: 1000px;
+	background-color: rgba(255, 255, 255, 0.85);
+	min-height: 100%;
+	margin: auto;
+	border: 2px solid rgb(70, 147, 126);
+}
+
+.main-decks h1 {
+	text-align: center;
+}
+
+.main-decks p {
+	text-align: center;
+	font-size: 18px;
+}
+
+.monsters,
+.north,
+.elves,
+.skelige,
+.nilf {
+	float: left;
+	margin: 20px;
+}
+
+.main-decks div {
+	padding-bottom: 15px;
+	text-align: justify;
+	padding-right: 30px;
+}
+
+.page-footer {
+	display: block;
+	max-width: 1000px;
+	height: 90px;
+	background-color: #000000;
+	border-top: 4px solid rgb(70, 147, 126);
+	color: #ffffff;
+	margin: auto;
+}
+
+.copyright {
+	float: right;
+	padding: 30px;
+}
+
+.connect {
+	float: left;
+	padding: 30px;
+}
+
+.mail {
+	text-decoration: underline;
+}
+
+.hand {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.divider {
+	display: block;
+    position: relative;
+    margin-bottom: 12px;
+    margin-top: -20px;
+    height: 90px;
+    width: 100%;
+}
+
+.divider img {
+	max-width: none;
+	display: block;
+}
+
+.divider-left {
+	left: -16px;
+}
+
+.divider-right {
+	right: -16px;
+}
+.divider-left img {
+	left: 0;
+}
+
+.divider-left, 
+.divider-right {
+    top: 50%;
+    width: 50%;
+    margin-top: -12px;
+    height: 19px;
+    overflow: hidden;
+}
+
+.divider-icon, 
+.divider-left, 
+.divider-left img, 
+.divider-right, 
+.divider-right img {
+    position: absolute;
+}
+
+.divider-right img {
+	right: 0;
+}
+
+.divider-icon {
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-left: -47px;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    width: 100px;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+.emhyr {
+	display: block;
+	margin-left: 40px;
+	width: 200px;
+	height: 550px;
+	margin-top: 20px;
+}
+
+.content {
+	display: table;
+	border-collapse: collapse;
+}
+
+.main-cards img {
+	transform: scale(1);
+	transition-duration: 0.3s;
+}
+
+.content ul {
+    display: table-row;
+}
+
+.content li {
+    display: table-cell;
+    text-align: justify;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.content img:hover {
+	transform: scale(1.35);
+	transition-duration: 0.2s;
+}
+
+.content .description {
+	margin-top: 10px;
+	margin-right: 20px;
+	max-width: 550px;
+	min-height: 20px;
+	background-color: rgb(70, 147, 126);
+	border-left: 4px solid #000000;
+	color: #ffffff;
+	vertical-align: bottom;
+	text-align: left;
+	padding: 15px;
+}
+
+.paginator {
+    width: 330px;
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+    background: #ecf0f1;
+}
+
+.paginator a,
+.paginator span {
+    display: inline-block;
+    min-width: 20px;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #95a5a6;
+    border-radius: 5px;
+}
+
+.paginator .prev {
+    margin-right: 20px;
+}
+
+.paginator .next {
+    margin-left: 20px;
+}
+
+.paginator .current {
+    background-color: rgb(70, 147, 126);
+}
+
+.paginator .disabled {
+     opacity: 0.3;
+}
+
+.paginator a:hover {
+    background-color: rgb(20, 97, 76);
+}
